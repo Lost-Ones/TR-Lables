@@ -55,7 +55,7 @@ if __name__ == "__main__":
         print(command)    
     print("\nNext, Paste in the output from the 'show lldp neighbor' command from the Cisco switch: <press 'Enter' then 'ctrl + d' to continue after paste>") 
     lldp_text = main()
-    print("\nFinally, Paste in the output from the '' command from the Cisco switch: <press 'Enter' then 'ctrl + d' to continue after paste>") 
+    print("\nFinally, Paste in the output from the 'show int description | i nac-' command from the Cisco switch: <press 'Enter' then 'ctrl + d' to continue after paste>") 
     nac_text = main()
     
 
