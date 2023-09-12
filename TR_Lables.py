@@ -11,7 +11,6 @@ import re, sys
 #nacs we need to know the model number
 
 
-
 def get_input():
     """Gets input from the user and saves it to a variable."""
     input_text = sys.stdin.read()
