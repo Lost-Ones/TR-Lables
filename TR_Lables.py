@@ -72,8 +72,10 @@ if __name__ == "__main__":
         destination_interface = re.findall('\S+\n|\S+$', line)
         is_mac_address = re.findall('\w{4}\.\w{4}\.\w{4}', line)
         if destination_hostname and not is_mac_address:
-            print(f'{hostname}, {destination_hostname}, {source_interface[0]}, {destination_interface[0]}')
-
+            try:
+                print(f'{hostname}, {destination_hostname}, {source_interface[0]}, {destination_interface[0]}')
+            except:
+                print(f'Error in line: {line}')
     for line in nac_text:
         destination_hostname = re.findall('nac-.+', line)
         if destination_hostname:
