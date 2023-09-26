@@ -41,6 +41,17 @@ def main():
     return lines
 
 if __name__ == "__main__":
+    print('''\n
+
+##############################################################################
+        ############################################################
+
+               DONT NOT paste in any password into the script. 
+               
+        ############################################################
+##############################################################################
+
+''')
     print('''\nThis script will assist with creating a CSV that can leter be used to getpopulate the data in Excel format to be used in the Spreadsheet for creating the cable labels.
          ''')
     commands = ['term len 0', 'show lldp neighbor','show int description | i nac-']
